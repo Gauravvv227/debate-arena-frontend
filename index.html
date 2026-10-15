@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Arena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title"> DEBATE ARENA</h1>
+        <p class="subtitle">Enter a topic. Watch AI argue both sides.</p>
+
+        <div class="input-section">
+            <input type="text" id="topic-input" placeholder="e.g. Social media is destroying society">
+            <button id="start-btn">Start Debate</button>
+        </div>
+        <div class="case-row">
+            <img src="assets/for-speaker.png" alt="" class="speaker" id="speaker-for">
+            <div id="case-banner" class="case-banner">
+                <div class="case-label">THE CASE</div>
+                <div class="case-title" id="case-title"></div>
+            </div>
+            <img src="assets/against-speaker.png" alt="" class="speaker" id="speaker-against">
+        </div>
+        
+
+        <div class="arena" id="arena" style="display:none">
+            <div class="debater" id="for-side">
+                <div class="debater-header for"> For</div>
+                <div class="arguments" id="for-arguments"></div>
+            </div>
+            <div class="debater" id="against-side">
+                <div class="debater-header against"> Against</div>
+                <div class="arguments" id="against-arguments"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

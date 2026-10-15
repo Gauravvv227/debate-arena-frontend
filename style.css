@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d0d0d;
+    color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 24px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+
+.input-section {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 48px;
+}
+
+input {
+    flex: 1;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    outline: none;
+    padding: 14px 18px;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #7c5cfc;
+}
+
+button {
+    background: #e8dcc8;
+    color: #2b1a12;
+    border: 1px solid #4a3626;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+button:disabled {
+    background: #a89878;
+    color: #5a4a30;
+    border-color: #5a4a30;
+    cursor: not-allowed;
+    transform: none;
+}
+.arena {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.debater {
+    background: #e8ddc9;
+    border: 1px solid #333;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.debater-header {
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px;
+    letter-spacing: normal;
+    text-transform: none;
+    text-align: center;
+    padding: 16px 20px 8px;
+    background: transparent;
+    border-bottom: none;
+}
+
+.debater-header.for {
+    color: #000000;
+}
+
+.debater-header.against {
+    color: #030303;
+}
+
+.arguments {
+    padding: 20px;
+    min-height: 200px;
+}
+
+#for-arguments, #against-arguments {
+    background: #e8dcc8;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.argument {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #c9b896;
+    padding: 16px 0;
+    color: #2b1a12;
+}
+
+.argument:last-child {
+    border-bottom: none;
+}
+
+.round-label {
+    color: #6b4f2e;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+.round-label {
+    color: #555;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+body {
+    background-color: #2b1a12;
+    color: #e8dcc8;
+    font-family: 'Outfit', sans-serif;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #e8dcc8;
+    margin-top: 40px;
+}
+
+.topic-search {
+    display: block;
+    margin: 24px auto;
+    width: 400px;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #e8dcc8;
+    color: #2b1a12;
+    font-size: 16px;
+}
+.speaker {
+    width: 220px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+.speaker.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+.case-banner {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease 0.2s, transform 0.6s ease 0.2s;
+    text-align: center;
+    width: 320px;
+    flex-shrink: 0;
+    align-self: center;
+    margin-bottom: 40px;
+}
+.case-banner.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+.case-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 150\\\px;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.arena {
+    position: relative;
+    z-index: 2;
+    margin-top: -60px;
+}
