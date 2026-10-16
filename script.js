@@ -20,6 +20,7 @@ async function startDebate() {
     arena.style.display = "grid";
     forArguments.innerHTML = "";
     againstArguments.innerHTML = "";
+    history.length = 0;
     startBtn.disabled = true;
     startBtn.textContent = "Debating...";
 
